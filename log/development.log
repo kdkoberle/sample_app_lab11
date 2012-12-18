@@ -17111,3 +17111,1581 @@ Served asset /static_pages.css - 200 OK (0ms)
 
 Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-12-17 21:17:40 -0600
 Served asset /users.css - 200 OK (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-12-17 21:28:30 -0600
+Connecting to database specified by database.yml
+Processing by StaticPagesController#home as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" = 'SyM7AFCZ5j7jeTfd8Le4XQ' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "microposts" WHERE "microposts"."user_id" = 101
+  Rendered shared/_user_info.html.erb (2.1ms)
+  Rendered shared/_error_messages.html.erb (0.2ms)
+  Rendered shared/_micropost_form.html.erb (1.7ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "microposts" WHERE (user_id = 101)[0m
+  Rendered shared/_feed.html.erb (0.9ms)
+  Rendered static_pages/_signed_in.html.erb (5.6ms)
+  Rendered static_pages/home.html.erb within layouts/application (8.4ms)
+  Rendered layouts/_shim.html.erb (0.2ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 127ms (Views: 67.4ms | ActiveRecord: 12.2ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2012-12-17 21:28:30 -0600
+Served asset /static_pages.css - 200 OK (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-12-17 21:28:30 -0600
+Served asset /sessions.css - 200 OK (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-12-17 21:28:30 -0600
+Served asset /users.css - 200 OK (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2012-12-17 21:28:30 -0600
+Served asset /bootstrap.js - 200 OK (8ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-12-17 21:28:30 -0600
+Served asset /sessions.js - 200 OK (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2012-12-17 21:28:30 -0600
+Served asset /static_pages.js - 200 OK (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-12-17 21:28:30 -0600
+Served asset /users.js - 200 OK (0ms)
+
+
+Started POST "/microposts" for 127.0.0.1 at 2012-12-17 21:28:41 -0600
+Processing by MicropostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"eykGmdAjX0AEmFRyduR4nR9eHt0nb+/TGkeOv/HfvO4=", "micropost"=>{"content"=>"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"}, "commit"=>"Post"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" = 'SyM7AFCZ5j7jeTfd8Le4XQ' LIMIT 1
+  [1m[36mMicropost Load (0.1ms)[0m  [1mSELECT "microposts".* FROM "microposts" WHERE "microposts"."user_id" = 101 AND "microposts"."id" IS NULL ORDER BY microposts.created_at DESC LIMIT 1[0m
+Redirected to http://localhost:3000/
+Filter chain halted as :correct_user rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-12-17 21:28:41 -0600
+Processing by StaticPagesController#home as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" = 'SyM7AFCZ5j7jeTfd8Le4XQ' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "microposts" WHERE "microposts"."user_id" = 101[0m
+  Rendered shared/_user_info.html.erb (1.5ms)
+  Rendered shared/_error_messages.html.erb (0.0ms)
+  Rendered shared/_micropost_form.html.erb (1.0ms)
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "microposts" WHERE (user_id = 101)
+  Rendered shared/_feed.html.erb (0.6ms)
+  Rendered static_pages/_signed_in.html.erb (3.8ms)
+  Rendered static_pages/home.html.erb within layouts/application (4.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 18ms (Views: 15.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-12-17 21:28:41 -0600
+Served asset /sessions.css - 200 OK (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-12-17 21:28:41 -0600
+Served asset /users.css - 200 OK (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2012-12-17 21:28:41 -0600
+Served asset /static_pages.css - 200 OK (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-12-17 21:28:48 -0600
+Processing by StaticPagesController#home as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" = 'SyM7AFCZ5j7jeTfd8Le4XQ' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "microposts" WHERE "microposts"."user_id" = 101
+  Rendered shared/_user_info.html.erb (3.5ms)
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered shared/_micropost_form.html.erb (1.5ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "microposts" WHERE (user_id = 101)[0m
+  Rendered shared/_feed.html.erb (0.5ms)
+  Rendered static_pages/_signed_in.html.erb (6.8ms)
+  Rendered static_pages/home.html.erb within layouts/application (7.4ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 36ms (Views: 32.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-12-17 21:28:48 -0600
+Served asset /application.css - 200 OK (13ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2012-12-17 21:28:48 -0600
+Served asset /static_pages.css - 200 OK (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-12-17 21:28:48 -0600
+Served asset /users.css - 200 OK (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-12-17 21:28:48 -0600
+Served asset /sessions.css - 200 OK (0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2012-12-17 21:28:48 -0600
+Served asset /custom.css - 200 OK (5ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-12-17 21:28:48 -0600
+Served asset /jquery_ujs.js - 200 OK (1ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2012-12-17 21:28:48 -0600
+Served asset /bootstrap-transition.js - 200 OK (1ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2012-12-17 21:28:48 -0600
+Served asset /bootstrap-button.js - 200 OK (1ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2012-12-17 21:28:48 -0600
+Served asset /bootstrap-carousel.js - 200 OK (1ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2012-12-17 21:28:48 -0600
+Served asset /bootstrap-alert.js - 200 OK (1ms)
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2012-12-17 21:28:48 -0600
+Served asset /bootstrap-affix.js - 200 OK (3ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2012-12-17 21:28:48 -0600
+Served asset /bootstrap-tab.js - 200 OK (5ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2012-12-17 21:28:48 -0600
+Served asset /bootstrap-collapse.js - 200 OK (3ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2012-12-17 21:28:48 -0600
+Served asset /bootstrap-tooltip.js - 200 OK (5ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2012-12-17 21:28:48 -0600
+Served asset /bootstrap-dropdown.js - 200 OK (5ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2012-12-17 21:28:48 -0600
+Served asset /bootstrap-modal.js - 200 OK (3ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2012-12-17 21:28:48 -0600
+Served asset /bootstrap-scrollspy.js - 200 OK (2ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2012-12-17 21:28:48 -0600
+Served asset /bootstrap-popover.js - 200 OK (2ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2012-12-17 21:28:48 -0600
+Served asset /static_pages.js - 200 OK (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-12-17 21:28:48 -0600
+Served asset /users.js - 200 OK (0ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2012-12-17 21:28:48 -0600
+Served asset /bootstrap-typeahead.js - 200 OK (3ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2012-12-17 21:28:48 -0600
+Served asset /bootstrap.js - 200 OK (4ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-12-17 21:28:48 -0600
+Served asset /sessions.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-12-17 21:28:48 -0600
+Served asset /application.js - 200 OK (21ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-12-17 21:28:48 -0600
+Served asset /jquery.js - 200 OK (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-12-17 21:28:48 -0600
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started POST "/microposts" for 127.0.0.1 at 2012-12-17 21:28:51 -0600
+Processing by MicropostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"eykGmdAjX0AEmFRyduR4nR9eHt0nb+/TGkeOv/HfvO4=", "micropost"=>{"content"=>"aaaaaaaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaa"}, "commit"=>"Post"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" = 'SyM7AFCZ5j7jeTfd8Le4XQ' LIMIT 1
+  [1m[36mMicropost Load (0.1ms)[0m  [1mSELECT "microposts".* FROM "microposts" WHERE "microposts"."user_id" = 101 AND "microposts"."id" IS NULL ORDER BY microposts.created_at DESC LIMIT 1[0m
+Redirected to http://localhost:3000/
+Filter chain halted as :correct_user rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-12-17 21:28:51 -0600
+Processing by StaticPagesController#home as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" = 'SyM7AFCZ5j7jeTfd8Le4XQ' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "microposts" WHERE "microposts"."user_id" = 101[0m
+  Rendered shared/_user_info.html.erb (1.5ms)
+  Rendered shared/_error_messages.html.erb (0.0ms)
+  Rendered shared/_micropost_form.html.erb (0.7ms)
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "microposts" WHERE (user_id = 101)
+  Rendered shared/_feed.html.erb (0.7ms)
+  Rendered static_pages/_signed_in.html.erb (3.7ms)
+  Rendered static_pages/home.html.erb within layouts/application (4.2ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 32ms (Views: 29.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-12-17 21:28:51 -0600
+Served asset /sessions.css - 200 OK (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-12-17 21:28:51 -0600
+Served asset /users.css - 200 OK (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2012-12-17 21:28:51 -0600
+Served asset /static_pages.css - 200 OK (0ms)
+
+
+Started DELETE "/signout" for 127.0.0.1 at 2012-12-17 21:28:54 -0600
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"eykGmdAjX0AEmFRyduR4nR9eHt0nb+/TGkeOv/HfvO4="}
+Redirected to http://localhost:3000/
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-12-17 21:28:54 -0600
+Processing by StaticPagesController#home as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" IS NULL LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" IS NULL LIMIT 1
+  Rendered static_pages/_not_signed_in.html.erb (0.9ms)
+  Rendered static_pages/home.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" IS NULL LIMIT 1[0m
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 14ms (Views: 13.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-12-17 21:28:54 -0600
+Served asset /sessions.css - 200 OK (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2012-12-17 21:28:54 -0600
+Served asset /static_pages.css - 200 OK (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-12-17 21:28:54 -0600
+Served asset /users.css - 200 OK (0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2012-12-17 21:28:55 -0600
+Processing by UsersController#new as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" IS NULL LIMIT 1
+  Rendered shared/_error_messages.html.erb (0.0ms)
+  Rendered users/_fields.html.erb (48.4ms)
+  Rendered users/new.html.erb within layouts/application (59.3ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" IS NULL LIMIT 1[0m
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 97ms (Views: 95.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-12-17 21:28:55 -0600
+Served asset /sessions.css - 200 OK (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2012-12-17 21:28:55 -0600
+Served asset /static_pages.css - 200 OK (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-12-17 21:28:55 -0600
+Served asset /users.css - 200 OK (0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2012-12-17 21:29:10 -0600
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"eykGmdAjX0AEmFRyduR4nR9eHt0nb+/TGkeOv/HfvO4=", "user"=>{"name"=>"john", "email"=>"john@john.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create my account"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" IS NULL LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('john@john.com') LIMIT 1
+Binary data inserted for `string` type on column `password_digest`
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "users" ("admin", "created_at", "email", "name", "password_digest", "remember_token", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["admin", nil], ["created_at", Tue, 18 Dec 2012 03:29:10 UTC +00:00], ["email", "john@john.com"], ["name", "john"], ["password_digest", "$2a$10$NIWvhSxy56ihovxoy2Ea5urAkgUfWHaWPmAstaVJbkO1b81Zacwhu"], ["remember_token", "mjnFwhtXOu1rE8QRKxSbJg"], ["updated_at", Tue, 18 Dec 2012 03:29:10 UTC +00:00]]
+  [1m[35m (137.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/users/102
+Completed 302 Found in 231ms (ActiveRecord: 138.1ms)
+
+
+Started GET "/users/102" for 127.0.0.1 at 2012-12-17 21:29:10 -0600
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"102"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "102"]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "microposts" WHERE "microposts"."user_id" = 102
+  Rendered users/show.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" = 'mjnFwhtXOu1rE8QRKxSbJg' LIMIT 1[0m
+  Rendered layouts/_header.html.erb (1.3ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 16ms (Views: 14.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-12-17 21:29:10 -0600
+Served asset /sessions.css - 200 OK (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2012-12-17 21:29:10 -0600
+Served asset /static_pages.css - 200 OK (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-12-17 21:29:10 -0600
+Served asset /users.css - 200 OK (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-12-17 21:29:14 -0600
+Processing by StaticPagesController#home as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" = 'mjnFwhtXOu1rE8QRKxSbJg' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "microposts" WHERE "microposts"."user_id" = 102[0m
+  Rendered shared/_user_info.html.erb (3.4ms)
+  Rendered shared/_error_messages.html.erb (0.0ms)
+  Rendered shared/_micropost_form.html.erb (1.7ms)
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "microposts" WHERE (user_id = 102)
+  Rendered shared/_feed.html.erb (1.1ms)
+  Rendered static_pages/_signed_in.html.erb (7.9ms)
+  Rendered static_pages/home.html.erb within layouts/application (8.4ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 38ms (Views: 34.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-12-17 21:29:14 -0600
+Served asset /sessions.css - 200 OK (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2012-12-17 21:29:14 -0600
+Served asset /static_pages.css - 200 OK (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-12-17 21:29:14 -0600
+Served asset /users.css - 200 OK (0ms)
+
+
+Started POST "/microposts" for 127.0.0.1 at 2012-12-17 21:29:16 -0600
+Processing by MicropostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"eykGmdAjX0AEmFRyduR4nR9eHt0nb+/TGkeOv/HfvO4=", "micropost"=>{"content"=>"aaa"}, "commit"=>"Post"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" = 'mjnFwhtXOu1rE8QRKxSbJg' LIMIT 1[0m
+  [1m[35mMicropost Load (0.1ms)[0m  SELECT "microposts".* FROM "microposts" WHERE "microposts"."user_id" = 102 AND "microposts"."id" IS NULL ORDER BY microposts.created_at DESC LIMIT 1
+Redirected to http://localhost:3000/
+Filter chain halted as :correct_user rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-12-17 21:29:16 -0600
+Processing by StaticPagesController#home as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" = 'mjnFwhtXOu1rE8QRKxSbJg' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "microposts" WHERE "microposts"."user_id" = 102
+  Rendered shared/_user_info.html.erb (1.4ms)
+  Rendered shared/_error_messages.html.erb (0.0ms)
+  Rendered shared/_micropost_form.html.erb (0.7ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "microposts" WHERE (user_id = 102)[0m
+  Rendered shared/_feed.html.erb (0.5ms)
+  Rendered static_pages/_signed_in.html.erb (3.2ms)
+  Rendered static_pages/home.html.erb within layouts/application (3.4ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 16ms (Views: 14.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-12-17 21:29:16 -0600
+Served asset /sessions.css - 200 OK (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2012-12-17 21:29:16 -0600
+Served asset /static_pages.css - 200 OK (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-12-17 21:29:16 -0600
+Served asset /users.css - 200 OK (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-12-17 21:29:26 -0600
+Processing by StaticPagesController#home as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" = 'mjnFwhtXOu1rE8QRKxSbJg' LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "microposts" WHERE "microposts"."user_id" = 102[0m
+  Rendered shared/_user_info.html.erb (3.8ms)
+  Rendered shared/_error_messages.html.erb (0.0ms)
+  Rendered shared/_micropost_form.html.erb (1.2ms)
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "microposts" WHERE (user_id = 102)
+  Rendered shared/_feed.html.erb (0.8ms)
+  Rendered static_pages/_signed_in.html.erb (7.3ms)
+  Rendered static_pages/home.html.erb within layouts/application (7.9ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 39ms (Views: 36.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-12-17 21:29:26 -0600
+Served asset /application.css - 200 OK (5ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-12-17 21:29:26 -0600
+Served asset /sessions.css - 200 OK (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2012-12-17 21:29:26 -0600
+Served asset /static_pages.css - 200 OK (0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2012-12-17 21:29:26 -0600
+Served asset /custom.css - 200 OK (3ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-12-17 21:29:26 -0600
+Served asset /users.css - 200 OK (0ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2012-12-17 21:29:26 -0600
+Served asset /bootstrap-alert.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-12-17 21:29:26 -0600
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2012-12-17 21:29:26 -0600
+Served asset /bootstrap-button.js - 200 OK (0ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2012-12-17 21:29:26 -0600
+Served asset /bootstrap-transition.js - 200 OK (0ms)
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2012-12-17 21:29:26 -0600
+Served asset /bootstrap-affix.js - 200 OK (0ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2012-12-17 21:29:26 -0600
+Served asset /bootstrap-carousel.js - 200 OK (0ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2012-12-17 21:29:26 -0600
+Served asset /bootstrap-scrollspy.js - 200 OK (13ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2012-12-17 21:29:26 -0600
+Served asset /bootstrap-collapse.js - 200 OK (0ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2012-12-17 21:29:26 -0600
+Served asset /bootstrap-tab.js - 200 OK (0ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2012-12-17 21:29:26 -0600
+Served asset /bootstrap-dropdown.js - 200 OK (2ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2012-12-17 21:29:26 -0600
+Served asset /bootstrap-modal.js - 200 OK (0ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2012-12-17 21:29:26 -0600
+Served asset /bootstrap-tooltip.js - 200 OK (2ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-12-17 21:29:26 -0600
+Served asset /sessions.js - 200 OK (0ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2012-12-17 21:29:26 -0600
+Served asset /bootstrap-popover.js - 200 OK (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2012-12-17 21:29:26 -0600
+Served asset /static_pages.js - 200 OK (0ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2012-12-17 21:29:26 -0600
+Served asset /bootstrap-typeahead.js - 200 OK (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2012-12-17 21:29:26 -0600
+Served asset /bootstrap.js - 200 OK (2ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-12-17 21:29:26 -0600
+Served asset /users.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-12-17 21:29:26 -0600
+Served asset /application.js - 200 OK (3ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-12-17 21:29:26 -0600
+Served asset /application.js - 200 OK (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-12-17 21:29:26 -0600
+Served asset /jquery.js - 200 OK (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-12-17 21:29:26 -0600
+Served asset /jquery.js - 200 OK (1ms)
+
+
+Started POST "/microposts" for 127.0.0.1 at 2012-12-17 21:29:30 -0600
+Processing by MicropostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"eykGmdAjX0AEmFRyduR4nR9eHt0nb+/TGkeOv/HfvO4=", "micropost"=>{"content"=>"aaaaaaaaaaaaa ddddddddddddd rrrrrrrrrrrr"}, "commit"=>"Post"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" = 'mjnFwhtXOu1rE8QRKxSbJg' LIMIT 1[0m
+  [1m[35mMicropost Load (0.1ms)[0m  SELECT "microposts".* FROM "microposts" WHERE "microposts"."user_id" = 102 AND "microposts"."id" IS NULL ORDER BY microposts.created_at DESC LIMIT 1
+Redirected to http://localhost:3000/
+Filter chain halted as :correct_user rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-12-17 21:29:30 -0600
+Processing by StaticPagesController#home as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" = 'mjnFwhtXOu1rE8QRKxSbJg' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "microposts" WHERE "microposts"."user_id" = 102
+  Rendered shared/_user_info.html.erb (3.6ms)
+  Rendered shared/_error_messages.html.erb (0.0ms)
+  Rendered shared/_micropost_form.html.erb (0.9ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "microposts" WHERE (user_id = 102)[0m
+  Rendered shared/_feed.html.erb (0.6ms)
+  Rendered static_pages/_signed_in.html.erb (6.3ms)
+  Rendered static_pages/home.html.erb within layouts/application (6.9ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 36ms (Views: 32.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-12-17 21:29:30 -0600
+Served asset /sessions.css - 200 OK (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2012-12-17 21:29:30 -0600
+Served asset /static_pages.css - 200 OK (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-12-17 21:29:30 -0600
+Served asset /users.css - 200 OK (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-12-17 21:29:39 -0600
+Processing by StaticPagesController#home as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" = 'mjnFwhtXOu1rE8QRKxSbJg' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "microposts" WHERE "microposts"."user_id" = 102[0m
+  Rendered shared/_user_info.html.erb (3.4ms)
+  Rendered shared/_error_messages.html.erb (0.0ms)
+  Rendered shared/_micropost_form.html.erb (1.5ms)
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "microposts" WHERE (user_id = 102)
+  Rendered shared/_feed.html.erb (1.3ms)
+  Rendered static_pages/_signed_in.html.erb (7.8ms)
+  Rendered static_pages/home.html.erb within layouts/application (8.4ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 24ms (Views: 20.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-12-17 21:29:39 -0600
+Served asset /sessions.css - 200 OK (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2012-12-17 21:29:39 -0600
+Served asset /static_pages.css - 200 OK (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-12-17 21:29:39 -0600
+Served asset /users.css - 200 OK (0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2012-12-17 21:29:42 -0600
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" = 'mjnFwhtXOu1rE8QRKxSbJg' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "users" 
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" LIMIT 30 OFFSET 0[0m
+  Rendered users/_user.html.erb (7.9ms)
+  Rendered users/index.html.erb within layouts/application (13.3ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 40ms (Views: 38.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-12-17 21:29:42 -0600
+Served asset /sessions.css - 200 OK (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2012-12-17 21:29:42 -0600
+Served asset /static_pages.css - 200 OK (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-12-17 21:29:42 -0600
+Served asset /users.css - 200 OK (0ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2012-12-17 21:29:43 -0600
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "microposts" WHERE "microposts"."user_id" = 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "microposts" WHERE "microposts"."user_id" = 1
+  [1m[36mMicropost Load (0.4ms)[0m  [1mSELECT "microposts".* FROM "microposts" WHERE "microposts"."user_id" = 1 ORDER BY microposts.created_at DESC LIMIT 30 OFFSET 0[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "microposts" WHERE "microposts"."user_id" = 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" = 'mjnFwhtXOu1rE8QRKxSbJg' LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  Rendered microposts/_micropost.html.erb (14.1ms)
+  Rendered users/show.html.erb within layouts/application (22.1ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 50ms (Views: 47.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-12-17 21:29:44 -0600
+Served asset /sessions.css - 200 OK (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-12-17 21:29:44 -0600
+Served asset /users.css - 200 OK (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2012-12-17 21:29:44 -0600
+Served asset /static_pages.css - 200 OK (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-12-17 21:29:49 -0600
+Processing by StaticPagesController#home as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" = 'mjnFwhtXOu1rE8QRKxSbJg' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "microposts" WHERE "microposts"."user_id" = 102[0m
+  Rendered shared/_user_info.html.erb (1.4ms)
+  Rendered shared/_error_messages.html.erb (0.0ms)
+  Rendered shared/_micropost_form.html.erb (0.7ms)
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "microposts" WHERE (user_id = 102)
+  Rendered shared/_feed.html.erb (0.5ms)
+  Rendered static_pages/_signed_in.html.erb (3.2ms)
+  Rendered static_pages/home.html.erb within layouts/application (3.5ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 20ms (Views: 16.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-12-17 21:29:49 -0600
+Served asset /sessions.css - 200 OK (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2012-12-17 21:29:49 -0600
+Served asset /static_pages.css - 200 OK (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-12-17 21:29:49 -0600
+Served asset /users.css - 200 OK (0ms)
+Connecting to database specified by database.yml
+  [1m[36m (0.6ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateUsers (20121214025911)
+Migrating to AddIndexToUsersEmail (20121214031924)
+Migrating to AddPasswordDigestToUsers (20121214032227)
+Migrating to AddRememberTokenToUsers (20121215045442)
+Migrating to AddAdminToUsers (20121215071116)
+Migrating to CreateMicroposts (20121216004106)
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+
+
+Started POST "/microposts" for 127.0.0.1 at 2012-12-17 21:30:20 -0600
+Connecting to database specified by database.yml
+Processing by MicropostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"eykGmdAjX0AEmFRyduR4nR9eHt0nb+/TGkeOv/HfvO4=", "micropost"=>{"content"=>"this is not long\r\n"}, "commit"=>"Post"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" = 'mjnFwhtXOu1rE8QRKxSbJg' LIMIT 1[0m
+  [1m[35mMicropost Load (0.1ms)[0m  SELECT "microposts".* FROM "microposts" WHERE "microposts"."user_id" = 102 AND "microposts"."id" IS NULL ORDER BY microposts.created_at DESC LIMIT 1
+Redirected to http://localhost:3000/
+Filter chain halted as :correct_user rendered or redirected
+Completed 302 Found in 44ms (ActiveRecord: 1.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-12-17 21:30:21 -0600
+Processing by StaticPagesController#home as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" = 'mjnFwhtXOu1rE8QRKxSbJg' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "microposts" WHERE "microposts"."user_id" = 102
+  Rendered shared/_user_info.html.erb (2.1ms)
+  Rendered shared/_error_messages.html.erb (0.3ms)
+  Rendered shared/_micropost_form.html.erb (1.8ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "microposts" WHERE (user_id = 102)[0m
+  Rendered shared/_feed.html.erb (1.0ms)
+  Rendered static_pages/_signed_in.html.erb (5.8ms)
+  Rendered static_pages/home.html.erb within layouts/application (20.1ms)
+  Rendered layouts/_shim.html.erb (0.2ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 89ms (Views: 80.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-12-17 21:30:21 -0600
+Served asset /sessions.css - 200 OK (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2012-12-17 21:30:21 -0600
+Served asset /static_pages.css - 200 OK (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-12-17 21:30:21 -0600
+Served asset /users.css - 200 OK (0ms)
+
+
+Started POST "/microposts" for 127.0.0.1 at 2012-12-17 21:30:27 -0600
+Processing by MicropostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"eykGmdAjX0AEmFRyduR4nR9eHt0nb+/TGkeOv/HfvO4=", "micropost"=>{"content"=>""}, "commit"=>"Post"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" = 'mjnFwhtXOu1rE8QRKxSbJg' LIMIT 1
+  [1m[36mMicropost Load (0.1ms)[0m  [1mSELECT "microposts".* FROM "microposts" WHERE "microposts"."user_id" = 102 AND "microposts"."id" IS NULL ORDER BY microposts.created_at DESC LIMIT 1[0m
+Redirected to http://localhost:3000/
+Filter chain halted as :correct_user rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-12-17 21:30:27 -0600
+Processing by StaticPagesController#home as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" = 'mjnFwhtXOu1rE8QRKxSbJg' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "microposts" WHERE "microposts"."user_id" = 102[0m
+  Rendered shared/_user_info.html.erb (3.1ms)
+  Rendered shared/_error_messages.html.erb (0.0ms)
+  Rendered shared/_micropost_form.html.erb (0.9ms)
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "microposts" WHERE (user_id = 102)
+  Rendered shared/_feed.html.erb (0.5ms)
+  Rendered static_pages/_signed_in.html.erb (5.9ms)
+  Rendered static_pages/home.html.erb within layouts/application (6.4ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 35ms (Views: 31.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-12-17 21:30:27 -0600
+Served asset /sessions.css - 200 OK (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2012-12-17 21:30:27 -0600
+Served asset /static_pages.css - 200 OK (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-12-17 21:30:27 -0600
+Served asset /users.css - 200 OK (0ms)
+
+
+Started POST "/microposts" for 127.0.0.1 at 2012-12-17 21:30:30 -0600
+Processing by MicropostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"eykGmdAjX0AEmFRyduR4nR9eHt0nb+/TGkeOv/HfvO4=", "micropost"=>{"content"=>"adsfa "}, "commit"=>"Post"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" = 'mjnFwhtXOu1rE8QRKxSbJg' LIMIT 1[0m
+  [1m[35mMicropost Load (0.1ms)[0m  SELECT "microposts".* FROM "microposts" WHERE "microposts"."user_id" = 102 AND "microposts"."id" IS NULL ORDER BY microposts.created_at DESC LIMIT 1
+Redirected to http://localhost:3000/
+Filter chain halted as :correct_user rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-12-17 21:30:30 -0600
+Processing by StaticPagesController#home as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" = 'mjnFwhtXOu1rE8QRKxSbJg' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "microposts" WHERE "microposts"."user_id" = 102
+  Rendered shared/_user_info.html.erb (1.5ms)
+  Rendered shared/_error_messages.html.erb (0.0ms)
+  Rendered shared/_micropost_form.html.erb (0.8ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "microposts" WHERE (user_id = 102)[0m
+  Rendered shared/_feed.html.erb (1.0ms)
+  Rendered static_pages/_signed_in.html.erb (4.0ms)
+  Rendered static_pages/home.html.erb within layouts/application (4.2ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 18ms (Views: 15.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-12-17 21:30:31 -0600
+Served asset /sessions.css - 200 OK (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-12-17 21:30:31 -0600
+Served asset /users.css - 200 OK (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2012-12-17 21:30:31 -0600
+Served asset /static_pages.css - 200 OK (0ms)
+
+
+Started DELETE "/signout" for 127.0.0.1 at 2012-12-17 21:33:35 -0600
+Connecting to database specified by database.yml
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"eykGmdAjX0AEmFRyduR4nR9eHt0nb+/TGkeOv/HfvO4="}
+Redirected to http://localhost:3000/
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-12-17 21:33:35 -0600
+Processing by StaticPagesController#home as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" IS NULL LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" IS NULL LIMIT 1
+  Rendered static_pages/home.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_shim.html.erb (0.2ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" IS NULL LIMIT 1[0m
+  Rendered layouts/_header.html.erb (1.1ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 85ms (Views: 62.6ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-12-17 21:33:35 -0600
+Served asset /sessions.css - 200 OK (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2012-12-17 21:33:35 -0600
+Served asset /static_pages.css - 200 OK (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-12-17 21:33:35 -0600
+Served asset /users.css - 200 OK (0ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2012-12-17 21:33:35 -0600
+Served asset /rails.png - 200 OK (0ms)
+
+
+Started GET "/signin" for 127.0.0.1 at 2012-12-17 21:33:37 -0600
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (62.3ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" IS NULL LIMIT 1
+  Rendered layouts/_header.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 89ms (Views: 88.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-12-17 21:33:37 -0600
+Served asset /sessions.css - 200 OK (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2012-12-17 21:33:37 -0600
+Served asset /static_pages.css - 200 OK (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-12-17 21:33:37 -0600
+Served asset /users.css - 200 OK (0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2012-12-17 21:33:46 -0600
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"eykGmdAjX0AEmFRyduR4nR9eHt0nb+/TGkeOv/HfvO4=", "session"=>{"email"=>"john@john.com", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'john@john.com' LIMIT 1[0m
+Redirected to http://localhost:3000/users/102
+Completed 302 Found in 53ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/users/102" for 127.0.0.1 at 2012-12-17 21:33:46 -0600
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"102"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "102"]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "microposts" WHERE "microposts"."user_id" = 102[0m
+  Rendered users/show.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" = 'mjnFwhtXOu1rE8QRKxSbJg' LIMIT 1
+  Rendered layouts/_header.html.erb (1.4ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 48ms (Views: 24.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-12-17 21:33:46 -0600
+Served asset /sessions.css - 200 OK (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2012-12-17 21:33:46 -0600
+Served asset /static_pages.css - 200 OK (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-12-17 21:33:46 -0600
+Served asset /users.css - 200 OK (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-12-17 21:33:49 -0600
+Processing by StaticPagesController#home as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" = 'mjnFwhtXOu1rE8QRKxSbJg' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "microposts" WHERE "microposts"."user_id" = 102
+  Rendered shared/_user_info.html.erb (1.8ms)
+  Rendered shared/_error_messages.html.erb (0.2ms)
+  Rendered shared/_micropost_form.html.erb (1.7ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "microposts" WHERE (user_id = 102)[0m
+  Rendered shared/_feed.html.erb (0.9ms)
+  Rendered static_pages/home.html.erb within layouts/application (5.2ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 42ms (Views: 29.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-12-17 21:33:49 -0600
+Served asset /sessions.css - 200 OK (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-12-17 21:33:49 -0600
+Served asset /users.css - 200 OK (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2012-12-17 21:33:49 -0600
+Served asset /static_pages.css - 200 OK (0ms)
+
+
+Started POST "/microposts" for 127.0.0.1 at 2012-12-17 21:33:54 -0600
+Processing by MicropostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"eykGmdAjX0AEmFRyduR4nR9eHt0nb+/TGkeOv/HfvO4=", "micropost"=>{"content"=>"Trying this again"}, "commit"=>"Post"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" = 'mjnFwhtXOu1rE8QRKxSbJg' LIMIT 1
+  [1m[36mMicropost Load (0.2ms)[0m  [1mSELECT "microposts".* FROM "microposts" WHERE "microposts"."user_id" = 102 AND "microposts"."id" IS NULL ORDER BY microposts.created_at DESC LIMIT 1[0m
+Redirected to http://localhost:3000/
+Filter chain halted as :correct_user rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-12-17 21:33:54 -0600
+Processing by StaticPagesController#home as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" = 'mjnFwhtXOu1rE8QRKxSbJg' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "microposts" WHERE "microposts"."user_id" = 102[0m
+  Rendered shared/_user_info.html.erb (2.3ms)
+  Rendered shared/_error_messages.html.erb (0.0ms)
+  Rendered shared/_micropost_form.html.erb (0.9ms)
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "microposts" WHERE (user_id = 102)
+  Rendered shared/_feed.html.erb (0.6ms)
+  Rendered static_pages/home.html.erb within layouts/application (4.9ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 19ms (Views: 16.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-12-17 21:33:54 -0600
+Served asset /sessions.css - 200 OK (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2012-12-17 21:33:54 -0600
+Served asset /static_pages.css - 200 OK (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-12-17 21:33:54 -0600
+Served asset /users.css - 200 OK (0ms)
+
+
+Started POST "/microposts" for 127.0.0.1 at 2012-12-17 21:38:00 -0600
+Processing by MicropostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"eykGmdAjX0AEmFRyduR4nR9eHt0nb+/TGkeOv/HfvO4=", "micropost"=>{"content"=>"now trying this again.,,,,"}, "commit"=>"Post"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" = 'mjnFwhtXOu1rE8QRKxSbJg' LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "microposts" ("content", "created_at", "updated_at", "user_id") VALUES (?, ?, ?, ?)[0m  [["content", "now trying this again.,,,,"], ["created_at", Tue, 18 Dec 2012 03:38:00 UTC +00:00], ["updated_at", Tue, 18 Dec 2012 03:38:00 UTC +00:00], ["user_id", 102]]
+  [1m[35m (110.7ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 126ms (ActiveRecord: 111.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-12-17 21:38:00 -0600
+Processing by StaticPagesController#home as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."remember_token" = 'mjnFwhtXOu1rE8QRKxSbJg' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "microposts" WHERE "microposts"."user_id" = 102
+  Rendered shared/_user_info.html.erb (1.7ms)
+  Rendered shared/_error_messages.html.erb (0.0ms)
+  Rendered shared/_micropost_form.html.erb (1.2ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "microposts" WHERE (user_id = 102)[0m
+  [1m[35mMicropost Load (0.1ms)[0m  SELECT "microposts".* FROM "microposts" WHERE (user_id = 102) ORDER BY microposts.created_at DESC LIMIT 30 OFFSET 0
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 102 LIMIT 1[0m
+  Rendered shared/_feed_item.html.erb (3.7ms)
+  Rendered shared/_feed.html.erb (5.4ms)
+  Rendered static_pages/_signed_in.html.erb (9.3ms)
+  Rendered static_pages/home.html.erb within layouts/application (10.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 37ms (Views: 34.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-12-17 21:38:00 -0600
+Served asset /sessions.css - 200 OK (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2012-12-17 21:38:00 -0600
+Served asset /static_pages.css - 200 OK (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-12-17 21:38:00 -0600
+Served asset /users.css - 200 OK (0ms)
+
+
+Started POST "/microposts" for 127.0.0.1 at 2012-12-17 21:38:30 -0600
+Processing by MicropostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"eykGmdAjX0AEmFRyduR4nR9eHt0nb+/TGkeOv/HfvO4=", "micropost"=>{"content"=>"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"}, "commit"=>"Post"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" = 'mjnFwhtXOu1rE8QRKxSbJg' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "microposts" ("content", "created_at", "updated_at", "user_id") VALUES (?, ?, ?, ?)  [["content", "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"], ["created_at", Tue, 18 Dec 2012 03:38:30 UTC +00:00], ["updated_at", Tue, 18 Dec 2012 03:38:30 UTC +00:00], ["user_id", 102]]
+  [1m[36m (118.2ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 122ms (ActiveRecord: 118.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-12-17 21:38:30 -0600
+Processing by StaticPagesController#home as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" = 'mjnFwhtXOu1rE8QRKxSbJg' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "microposts" WHERE "microposts"."user_id" = 102[0m
+  Rendered shared/_user_info.html.erb (2.6ms)
+  Rendered shared/_error_messages.html.erb (0.0ms)
+  Rendered shared/_micropost_form.html.erb (1.3ms)
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "microposts" WHERE (user_id = 102)
+  [1m[36mMicropost Load (0.1ms)[0m  [1mSELECT "microposts".* FROM "microposts" WHERE (user_id = 102) ORDER BY microposts.created_at DESC LIMIT 30 OFFSET 0[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 102 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 102 LIMIT 1[0m
+  Rendered shared/_feed_item.html.erb (2.9ms)
+  Rendered shared/_feed.html.erb (5.4ms)
+  Rendered static_pages/_signed_in.html.erb (10.5ms)
+  Rendered static_pages/home.html.erb within layouts/application (11.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 38ms (Views: 36.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-12-17 21:38:30 -0600
+Served asset /sessions.css - 200 OK (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2012-12-17 21:38:30 -0600
+Served asset /static_pages.css - 200 OK (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-12-17 21:38:30 -0600
+Served asset /users.css - 200 OK (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-12-17 21:48:31 -0600
+Processing by StaticPagesController#home as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" = 'mjnFwhtXOu1rE8QRKxSbJg' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "microposts" WHERE "microposts"."user_id" = 102[0m
+  Rendered shared/_user_info.html.erb (1.7ms)
+  Rendered shared/_error_messages.html.erb (0.0ms)
+  Rendered shared/_micropost_form.html.erb (1.1ms)
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "microposts" WHERE (user_id = 102)
+  [1m[36mMicropost Load (0.1ms)[0m  [1mSELECT "microposts".* FROM "microposts" WHERE (user_id = 102) ORDER BY microposts.created_at DESC LIMIT 30 OFFSET 0[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 102 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 102 LIMIT 1[0m
+  Rendered shared/_feed_item.html.erb (45.6ms)
+  Rendered shared/_feed.html.erb (47.0ms)
+  Rendered static_pages/_signed_in.html.erb (50.4ms)
+  Rendered static_pages/home.html.erb within layouts/application (50.6ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 76ms (Views: 61.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-12-17 21:48:31 -0600
+Served asset /application.css - 200 OK (31ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-12-17 21:48:31 -0600
+Served asset /sessions.css - 200 OK (0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2012-12-17 21:48:31 -0600
+Served asset /custom.css - 200 OK (10ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2012-12-17 21:48:31 -0600
+Served asset /static_pages.css - 200 OK (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-12-17 21:48:31 -0600
+Served asset /users.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-12-17 21:48:31 -0600
+Served asset /jquery_ujs.js - 200 OK (18ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2012-12-17 21:48:31 -0600
+Served asset /bootstrap-transition.js - 200 OK (3ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2012-12-17 21:48:31 -0600
+Served asset /bootstrap-alert.js - 200 OK (2ms)
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2012-12-17 21:48:31 -0600
+Served asset /bootstrap-affix.js - 200 OK (3ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2012-12-17 21:48:31 -0600
+Served asset /bootstrap-button.js - 200 OK (2ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2012-12-17 21:48:31 -0600
+Served asset /bootstrap-collapse.js - 200 OK (3ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2012-12-17 21:48:31 -0600
+Served asset /bootstrap-carousel.js - 200 OK (3ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2012-12-17 21:48:31 -0600
+Served asset /bootstrap-dropdown.js - 200 OK (5ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2012-12-17 21:48:32 -0600
+Served asset /bootstrap-scrollspy.js - 200 OK (4ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2012-12-17 21:48:32 -0600
+Served asset /bootstrap-modal.js - 200 OK (2ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2012-12-17 21:48:32 -0600
+Served asset /bootstrap-tab.js - 200 OK (4ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2012-12-17 21:48:32 -0600
+Served asset /bootstrap-popover.js - 200 OK (2ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2012-12-17 21:48:32 -0600
+Served asset /bootstrap-tooltip.js - 200 OK (5ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2012-12-17 21:48:32 -0600
+Served asset /bootstrap-typeahead.js - 200 OK (3ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-12-17 21:48:32 -0600
+Served asset /sessions.js - 200 OK (1ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2012-12-17 21:48:32 -0600
+Served asset /bootstrap.js - 200 OK (11ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2012-12-17 21:48:32 -0600
+Served asset /static_pages.js - 200 OK (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-12-17 21:48:32 -0600
+Served asset /application.js - 200 OK (13ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-12-17 21:48:32 -0600
+Served asset /users.js - 200 OK (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-12-17 21:48:32 -0600
+Served asset /jquery.js - 200 OK (1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-12-17 21:48:57 -0600
+Processing by StaticPagesController#home as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" = 'mjnFwhtXOu1rE8QRKxSbJg' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "microposts" WHERE "microposts"."user_id" = 102[0m
+  Rendered shared/_user_info.html.erb (20.5ms)
+  Rendered shared/_error_messages.html.erb (0.0ms)
+  Rendered shared/_micropost_form.html.erb (0.9ms)
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "microposts" WHERE (user_id = 102)
+  [1m[36mMicropost Load (0.1ms)[0m  [1mSELECT "microposts".* FROM "microposts" WHERE (user_id = 102) ORDER BY microposts.created_at DESC LIMIT 30 OFFSET 0[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 102 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 102 LIMIT 1[0m
+  Rendered shared/_feed_item.html.erb (2.0ms)
+  Rendered shared/_feed.html.erb (3.5ms)
+  Rendered static_pages/_signed_in.html.erb (26.3ms)
+  Rendered static_pages/home.html.erb within layouts/application (26.9ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 42ms (Views: 38.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-12-17 21:48:57 -0600
+Served asset /application.css - 304 Not Modified (13ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2012-12-17 21:48:57 -0600
+Served asset /custom.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-12-17 21:48:57 -0600
+Served asset /users.css - 200 OK (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-12-17 21:48:57 -0600
+Served asset /sessions.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-12-17 21:48:57 -0600
+Served asset /jquery.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2012-12-17 21:48:57 -0600
+Served asset /static_pages.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-12-17 21:48:57 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2012-12-17 21:48:57 -0600
+Served asset /bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2012-12-17 21:48:57 -0600
+Served asset /bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2012-12-17 21:48:57 -0600
+Served asset /bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2012-12-17 21:48:57 -0600
+Served asset /bootstrap-alert.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2012-12-17 21:48:57 -0600
+Served asset /bootstrap-tab.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2012-12-17 21:48:57 -0600
+Served asset /bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2012-12-17 21:48:57 -0600
+Served asset /bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2012-12-17 21:48:57 -0600
+Served asset /bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2012-12-17 21:48:57 -0600
+Served asset /bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2012-12-17 21:48:57 -0600
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2012-12-17 21:48:57 -0600
+Served asset /bootstrap-tab.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2012-12-17 21:48:57 -0600
+Served asset /bootstrap.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2012-12-17 21:48:57 -0600
+Served asset /bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2012-12-17 21:48:57 -0600
+Served asset /bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2012-12-17 21:48:57 -0600
+Served asset /bootstrap-popover.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-12-17 21:48:57 -0600
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2012-12-17 21:48:57 -0600
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-12-17 21:48:57 -0600
+Served asset /application.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-12-17 21:48:57 -0600
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-12-17 21:48:57 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2012-12-17 21:48:57 -0600
+Served asset /bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2012-12-17 21:48:57 -0600
+Served asset /bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2012-12-17 21:48:57 -0600
+Served asset /bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2012-12-17 21:48:57 -0600
+Served asset /bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2012-12-17 21:48:57 -0600
+Served asset /bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2012-12-17 21:48:57 -0600
+Served asset /bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2012-12-17 21:48:57 -0600
+Served asset /bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2012-12-17 21:48:57 -0600
+Served asset /bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2012-12-17 21:48:57 -0600
+Served asset /bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2012-12-17 21:48:57 -0600
+Served asset /bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2012-12-17 21:48:57 -0600
+Served asset /bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2012-12-17 21:48:57 -0600
+Served asset /bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2012-12-17 21:48:57 -0600
+Served asset /bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2012-12-17 21:48:57 -0600
+Served asset /bootstrap.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-12-17 21:48:57 -0600
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2012-12-17 21:48:57 -0600
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-12-17 21:48:57 -0600
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-12-17 21:48:57 -0600
+Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-12-17 21:48:59 -0600
+Processing by StaticPagesController#home as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" = 'mjnFwhtXOu1rE8QRKxSbJg' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "microposts" WHERE "microposts"."user_id" = 102[0m
+  Rendered shared/_user_info.html.erb (3.5ms)
+  Rendered shared/_error_messages.html.erb (0.0ms)
+  Rendered shared/_micropost_form.html.erb (0.7ms)
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "microposts" WHERE (user_id = 102)
+  [1m[36mMicropost Load (0.1ms)[0m  [1mSELECT "microposts".* FROM "microposts" WHERE (user_id = 102) ORDER BY microposts.created_at DESC LIMIT 30 OFFSET 0[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 102 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 102 LIMIT 1[0m
+  Rendered shared/_feed_item.html.erb (2.0ms)
+  Rendered shared/_feed.html.erb (3.2ms)
+  Rendered static_pages/_signed_in.html.erb (8.5ms)
+  Rendered static_pages/home.html.erb within layouts/application (9.1ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 40ms (Views: 36.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-12-17 21:48:59 -0600
+Served asset /application.css - 200 OK (2ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2012-12-17 21:48:59 -0600
+Served asset /custom.css - 200 OK (2ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-12-17 21:48:59 -0600
+Served asset /sessions.css - 200 OK (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-12-17 21:48:59 -0600
+Served asset /users.css - 200 OK (0ms)
+
+
+Started GET "/assets/bootstrap-transition.js?body=1" for 127.0.0.1 at 2012-12-17 21:48:59 -0600
+Served asset /bootstrap-transition.js - 200 OK (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2012-12-17 21:48:59 -0600
+Served asset /static_pages.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-12-17 21:48:59 -0600
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/bootstrap-alert.js?body=1" for 127.0.0.1 at 2012-12-17 21:48:59 -0600
+Served asset /bootstrap-alert.js - 200 OK (0ms)
+
+
+Started GET "/assets/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2012-12-17 21:48:59 -0600
+Served asset /bootstrap-carousel.js - 200 OK (0ms)
+
+
+Started GET "/assets/bootstrap-affix.js?body=1" for 127.0.0.1 at 2012-12-17 21:48:59 -0600
+Served asset /bootstrap-affix.js - 200 OK (0ms)
+
+
+Started GET "/assets/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2012-12-17 21:48:59 -0600
+Served asset /bootstrap-dropdown.js - 200 OK (0ms)
+
+
+Started GET "/assets/bootstrap-button.js?body=1" for 127.0.0.1 at 2012-12-17 21:48:59 -0600
+Served asset /bootstrap-button.js - 200 OK (0ms)
+
+
+Started GET "/assets/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2012-12-17 21:48:59 -0600
+Served asset /bootstrap-collapse.js - 200 OK (0ms)
+
+
+Started GET "/assets/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2012-12-17 21:48:59 -0600
+Served asset /bootstrap-scrollspy.js - 200 OK (15ms)
+
+
+Started GET "/assets/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2012-12-17 21:48:59 -0600
+Served asset /bootstrap-tooltip.js - 200 OK (0ms)
+
+
+Started GET "/assets/bootstrap-modal.js?body=1" for 127.0.0.1 at 2012-12-17 21:48:59 -0600
+Served asset /bootstrap-modal.js - 200 OK (0ms)
+
+
+Started GET "/assets/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2012-12-17 21:48:59 -0600
+Served asset /bootstrap-typeahead.js - 200 OK (0ms)
+
+
+Started GET "/assets/bootstrap-tab.js?body=1" for 127.0.0.1 at 2012-12-17 21:48:59 -0600
+Served asset /bootstrap-tab.js - 200 OK (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2012-12-17 21:48:59 -0600
+Served asset /sessions.js - 200 OK (0ms)
+
+
+Started GET "/assets/bootstrap-popover.js?body=1" for 127.0.0.1 at 2012-12-17 21:48:59 -0600
+Served asset /bootstrap-popover.js - 200 OK (2ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-12-17 21:48:59 -0600
+Served asset /users.js - 200 OK (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2012-12-17 21:48:59 -0600
+Served asset /bootstrap.js - 200 OK (4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-12-17 21:48:59 -0600
+Served asset /jquery.js - 200 OK (1ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2012-12-17 21:48:59 -0600
+Served asset /static_pages.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-12-17 21:48:59 -0600
+Served asset /application.js - 200 OK (3ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-12-17 21:48:59 -0600
+Served asset /application.js - 200 OK (3ms)
+
+
+Started POST "/microposts" for 127.0.0.1 at 2012-12-17 21:49:07 -0600
+Processing by MicropostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"eykGmdAjX0AEmFRyduR4nR9eHt0nb+/TGkeOv/HfvO4=", "micropost"=>{"content"=>"aaaaaaaaaaaaaaaaaaaaaaaannnnnnnnnnnnnnnnnnnddddddddddddddddd then\r\n"}, "commit"=>"Post"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" = 'mjnFwhtXOu1rE8QRKxSbJg' LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "microposts" ("content", "created_at", "updated_at", "user_id") VALUES (?, ?, ?, ?)  [["content", "aaaaaaaaaaaaaaaaaaaaaaaannnnnnnnnnnnnnnnnnnddddddddddddddddd then\r\n"], ["created_at", Tue, 18 Dec 2012 03:49:07 UTC +00:00], ["updated_at", Tue, 18 Dec 2012 03:49:07 UTC +00:00], ["user_id", 102]]
+  [1m[36m (128.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 132ms (ActiveRecord: 128.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-12-17 21:49:08 -0600
+Processing by StaticPagesController#home as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" = 'mjnFwhtXOu1rE8QRKxSbJg' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "microposts" WHERE "microposts"."user_id" = 102[0m
+  Rendered shared/_user_info.html.erb (1.4ms)
+  Rendered shared/_error_messages.html.erb (0.0ms)
+  Rendered shared/_micropost_form.html.erb (0.7ms)
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "microposts" WHERE (user_id = 102)
+  [1m[36mMicropost Load (0.1ms)[0m  [1mSELECT "microposts".* FROM "microposts" WHERE (user_id = 102) ORDER BY microposts.created_at DESC LIMIT 30 OFFSET 0[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 102 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 102 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 102 LIMIT 1
+  Rendered shared/_feed_item.html.erb (3.4ms)
+  Rendered shared/_feed.html.erb (4.7ms)
+  Rendered static_pages/_signed_in.html.erb (7.5ms)
+  Rendered static_pages/home.html.erb within layouts/application (7.8ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 36ms (Views: 33.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2012-12-17 21:49:08 -0600
+Served asset /sessions.css - 200 OK (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2012-12-17 21:49:08 -0600
+Served asset /static_pages.css - 200 OK (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-12-17 21:49:08 -0600
+Served asset /users.css - 200 OK (0ms)
